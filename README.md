@@ -41,6 +41,8 @@ collate = "scriv print > temp.md && hatch version $(changelog-version-bump)  && 
 
 # Pre-commit hook
 
+> This was originally created by [TypicalArray](https://github.com/TypicalArray).
+
 Some places (like Azure DevOps) do not render `.md` files automatically. So in order to clean them up, this repo also contains a pre-commit hook which automatically removes all commented out lines, removes superfluous empty lines and enforces that all lines have to start with a `#` or a `-`, which helps with formatting. It can be used as follows:
 
 ```yaml
