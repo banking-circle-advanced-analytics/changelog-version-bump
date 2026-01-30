@@ -1,6 +1,6 @@
 [project]
 name = "changelog-version-bump"
-version = "0.4.8"
+version = "0.4.9"
 description = "A CLI tool to detect version labels in temp.md"
 authors = [
     { name = "Richard Oberdieck", email = "rico@bankingcircle.com" },
@@ -20,3 +20,7 @@ check-for-approvers = "changelog_version_bump.check_for_approvers.cli:main"
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]

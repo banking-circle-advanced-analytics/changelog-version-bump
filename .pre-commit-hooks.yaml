@@ -8,7 +8,7 @@
   name: Delete folder for generated content
   entry: delete-folder
   language: python
-- id: check-for-approversr
+- id: check-for-approvers
   name: Check approvers are added if needed
   entry: check-for-approvers
   language: python

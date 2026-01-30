@@ -18,6 +18,7 @@ def process_file(filename: str) -> str:
         if not business_approver_section or ":" not in line:
             continue
         _, right = line.split(":", 1)
+        right = right.strip().strip('\n')
         if not right in ["Y", "N"]:
             raise ValueError(f'Approvers need a "Y" or "N" for each approver. Did not get in {filename}')
 
